@@ -6,6 +6,7 @@
   <title>Bonfesto</title>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:500&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
   <main>
@@ -15,13 +16,13 @@
     <nav class="main-nav">
       <ul class="main-nav__list brends">
         <li class="brends__item">
-          <a class="brends__link brends__link--all">
-            Все бренды
+          <a class="brends__link" href="#">
+            <span>Все бренды</span>
           </a>
         </li>
         <li class="brends__item">
-          <a class="brends__link" href="#">
-            <img class="brends__icon" src="img/bonfesto.png" width="89" height="27" alt="Логотип торговой марки «Bonfesto»">
+          <a class="brends__link brends__link--active">
+            <img class="brends__icon" src="img/bonfesto.png" width="89" height="29" alt="Логотип торговой марки «Bonfesto»">
           </a>
         </li>
         <li class="brends__item">
@@ -31,7 +32,7 @@
         </li>
         <li class="brends__item">
           <a class="brends__link" href="#">
-            <img class="brends__icon" src="img/cooking.png" width="89" height="27" alt="Логотип торговой марки «CooKing»">
+            <img class="brends__icon" src="img/cooking.png" width="89" height="29" alt="Логотип торговой марки «CooKing»">
           </a>
         </li>
       </ul>
@@ -40,34 +41,54 @@
     <section class="product">
       <ul class="product__list">
         <li class="product__item">
-          <img class="product__image" src="img/bonfesto-tartarus.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto тар-тар»">
-          <h3 class="product__title"><span>Кремчиз</span> тар-тар</h3>
-          <p class="product__categories">Сыр мягкий</p>
-          <p class="product__description">Прекрасно заменяет классический французский соус из желтка, растительного масла и зеленого лука.</p>
+          <a class="product__link" href="#">
+            <img class="product__image" src="img/bonfesto-tartarus.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto тар-тар»">
+            <div class="product__header">
+              <h3 class="product__title"><span class="product__title--underline"><span class="product__title--uppercase">Кремчиз</span><br>тар-тар</span></h3>
+              <p class="product__categories">Сыр мягкий</p>
+            </div>
+            <p class="product__description">Прекрасно заменяет классический французский соус из желтка, растительного масла и зеленого лука.</p>
+          </a>
         </li>
         <li class="product__item">
-          <img class="product__image" src="img/bonfesto-horseradish.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto хрен»">
-          <h3 class="product__title"><span>Кремчиз</span> хрен</h3>
-          <p class="product__categories">Сыр мягкий</p>
-          <p class="product__description">Хорош для бутербродов с рыбой или мясом. Можно добавлять в салаты для пикантного вкуса.</p>
+          <a class="product__link" href="#">
+            <img class="product__image" src="img/bonfesto-horseradish.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto хрен»">
+            <div class="product__header">
+              <h3 class="product__title"><span class="product__title--underline"><span class="product__title--uppercase">Кремчиз</span><br>хрен</span></h3>
+              <p class="product__categories">Сыр мягкий</p>
+            </div>
+            <p class="product__description">Хорош для бутербродов с рыбой или мясом. Можно добавлять в салаты для пикантного вкуса.</p>
+          </a>
         </li>
         <li class="product__item">
-          <img class="product__image" src="img/bonfesto-neapolitan.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto неаполитанский»">
-          <h3 class="product__title"><span>Кремчиз</span> неаполитанский</h3>
-          <p class="product__categories">Сыр мягкий</p>
-          <p class="product__description">Идеален для курицы, отлично сочетается с говядиной в блюдах средиземноморской кухни.</p>
+          <a class="product__link" href="#">
+            <img class="product__image" src="img/bonfesto-neapolitan.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto неаполитанский»">
+            <div class="product__header">
+              <h3 class="product__title"><span class="product__title--underline"><span class="product__title--uppercase">Кремчиз</span><br>неаполитанский</span></h3>
+              <p class="product__categories">Сыр мягкий</p>
+            </div>
+            <p class="product__description">Идеален для курицы, отлично сочетается с&nbsp;говядиной в блюдах средиземноморской кухни.</p>
+          </a>
         </li>
         <li class="product__item">
-          <img class="product__image" src="img/bonfesto-neapolitan.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto неаполитанский»">
-          <h3 class="product__title"><span>Кремчиз</span> неаполитанский</h3>
-          <p class="product__categories">Сыр мягкий</p>
-          <p class="product__description">Идеален для курицы, отлично сочетается с говядиной в блюдах средиземноморской кухни.</p>
+          <a class="product__link" href="#">
+            <img class="product__image" src="img/bonfesto-neapolitan.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto неаполитанский»">
+            <div class="product__header">
+              <h3 class="product__title"><span class="product__title--underline"><span class="product__title--uppercase">Кремчиз</span><br>неаполитанский</span></h3>
+              <p class="product__categories">Сыр мягкий</p>
+            </div>
+            <p class="product__description">Идеален для курицы, отлично сочетается с&nbsp;говядиной в блюдах средиземноморской кухни.</p>
+          </a>
         </li>
         <li class="product__item">
-          <img class="product__image" src="img/bonfesto-tartarus.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto тар-тар»">
-          <h3 class="product__title"><span>Кремчиз</span> тар-тар</h3>
-          <p class="product__categories">Сыр мягкий</p>
-          <p class="product__description">Прекрасно заменяет классический французский соус из желтка, растительного масла и зеленого лука.</p>
+          <a class="product__link" href="#">
+            <img class="product__image" src="img/bonfesto-tartarus.jpg" width="300" height="200" alt="Изображение упаковки «Bonfesto тар-тар»">
+            <div class="product__header">
+              <h3 class="product__title"><span class="product__title--underline"><span class="product__title--uppercase">Кремчиз</span><br>тар-тар</span></h3>
+              <p class="product__categories">Сыр мягкий</p>
+            </div>
+            <p class="product__description">Прекрасно заменяет классический французский соус из желтка, растительного масла и зеленого лука.</p>
+          </a>
         </li>
       </ul>
     </section>
