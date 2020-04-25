@@ -1,0 +1,85 @@
+.product {
+	@include center(940px);
+
+	&__list {
+		@include pm-zero();
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 300px;
+		margin-bottom: 20px;
+
+		&:not(:nth-child(3n)) {
+			margin-right: 20px;
+		} 
+	}
+
+	&__link {
+		&:hover h3,
+		&:hover .product__title--underline,
+		&:focus h3,
+		&:focus .product__title--underline {
+    	color: $text-hov;
+    	border-color: $border-hov;
+    }
+
+    &:active h3,
+		&:active .product__title--underline {
+			color: $text-act;
+    	border-color: $border-act;
+		}
+	}
+
+	&__header {
+		position: relative;
+		padding-top: 5px;
+		padding-bottom: 47px;
+		display: flex;
+		flex-direction: column-reverse;
+
+		&::before {
+      content: "";
+			
+			position: absolute;
+      top: 94px;
+      left: 2px;
+
+      width: 72px;
+      height: 24px;
+			@include bg-img("../../img/bonfesto-mark.jpg");
+    }
+	}
+
+	&__title {
+		margin: 0;
+		font-family: "Exo 2", "Arial", sans-serif;
+		@include font(20px, 500, 24px);
+		color: $title-color;
+
+		&--underline {
+			border-bottom: 1px dotted $border-color;
+		}
+
+		&--uppercase {
+			text-transform: uppercase;
+			font-size: 30px;
+			line-height: 32px;
+		}
+	}
+
+	&__categories {
+		margin: 0;
+		font-family: "Exo 2", "Arial", sans-serif;
+		font-weight: 500;
+		color: $title-color;
+	}
+
+	&__description {
+		margin: 0;
+		padding-bottom: 20px;
+		letter-spacing: -0.1px;
+	}
+}

@@ -1,0 +1,8 @@
+h2 {
+	@include center(940px);
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-family: "Exo 2", "Open Sans", sans-serif;
+	@include font(36px, 500, 42px);
+	text-align: center;
+}

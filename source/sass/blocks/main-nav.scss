@@ -1,0 +1,40 @@
+.brends {
+	display: flex;
+	justify-content: space-between;
+	@include center(600px);
+	padding: 0;
+	padding-bottom: 18px;
+	list-style: none;
+
+	&__link {
+		display: inline-block;
+		width: 100px;
+		height: 29px;
+		padding-top: 10px;
+		padding-bottom: 11px;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: $link-bg;
+		font-size: 18px;
+		line-height: 29px;
+		color: $link-color;
+		text-align: center;
+
+		span {
+			border-bottom: 2px dotted $border-link-color;
+		}
+
+		&--active {
+			background-color: $link-act-color;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $link-hov-color;
+		}
+
+		&:active {
+			background-color: $link-act-color;
+		};
+	}
+}
