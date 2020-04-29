@@ -471,7 +471,7 @@ h2 {
       left: 0;
       width: 72px;
       height: 24px;
-      background-image: url("../../img/bonfesto-mark.jpg");
+      background-image: url("./../img/bonfesto-mark.jpg");
       background-repeat: no-repeat;
       background-position: 0 0; }
   .product__title {
