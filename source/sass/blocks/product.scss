@@ -2,18 +2,21 @@
 	@include center(940px);
 
 	&__list {
-		@include pm-zero();
-		list-style: none;
 		display: flex;
 		flex-wrap: wrap;
+		
+		@include pm-zero();
+		
+		list-style: none;
 	}
 
 	&__item {
 		width: 300px;
 		margin-bottom: 20px;
+		margin-right: 20px;
 
-		&:not(:nth-child(3n)) {
-			margin-right: 20px;
+		&:nth-child(3n) {
+			margin-right: 0;
 		} 
 	}
 
@@ -34,18 +37,19 @@
 	}
 
 	&__header {
+		display: flex;
+		flex-direction: column-reverse;
+		
 		position: relative;
 		padding-top: 5px;
 		padding-bottom: 47px;
-		display: flex;
-		flex-direction: column-reverse;
 
 		&::before {
       content: "";
 			
 			position: absolute;
       top: 94px;
-      left: 2px;
+      left: 0;
 
       width: 72px;
       height: 24px;
@@ -55,6 +59,7 @@
 
 	&__title {
 		margin: 0;
+		
 		font-family: "Exo 2", "Arial", sans-serif;
 		@include font(20px, 500, 24px);
 		color: $title-color;
@@ -72,6 +77,7 @@
 
 	&__categories {
 		margin: 0;
+		
 		font-family: "Exo 2", "Arial", sans-serif;
 		font-weight: 500;
 		color: $title-color;
@@ -79,7 +85,87 @@
 
 	&__description {
 		margin: 0;
-		padding-bottom: 20px;
+		
 		letter-spacing: -0.1px;
+	}
+}
+
+@media (max-width: $medium) {
+	.product {
+		@include center(621px);
+
+		&__list {
+			justify-content: space-between;
+		}
+
+		&__item {
+			&:nth-child(3n) {
+				margin-right: 20px;
+			}
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}  
+		}
+	}
+}
+
+@media (max-width: $small) {
+	.product {
+		@include center(536px);
+
+		&__item {
+			width: 536px;
+			margin-right: 0;
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+
+		&__link {
+			display: flex;
+		}
+
+		&__header {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			padding-left: 20px;		 
+		}
+	}
+}
+
+@media (max-width: $extra-small) {
+	.product {
+		width: auto;
+
+		&__item {
+			width: auto;
+		}
+
+		&__link {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__wrapper {
+			padding-right: 20px;
+		}
+
+		&__header {
+			padding-top: 10px;
+			padding-bottom: 42px;
+		}
+
+		&__image {
+			width: 100%;
+		}
 	}
 }

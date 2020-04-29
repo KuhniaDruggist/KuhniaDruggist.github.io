@@ -1,20 +1,24 @@
-.brends {
+	.brends {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	
 	@include center(600px);
 	padding: 0;
-	padding-bottom: 18px;
+	
 	list-style: none;
 
 	&__link {
 		display: inline-block;
 		width: 100px;
 		height: 29px;
+		margin-bottom: 10px;
 		padding-top: 10px;
 		padding-bottom: 11px;
 		padding-left: 20px;
 		padding-right: 20px;
 		background-color: $link-bg;
+		
 		font-size: 18px;
 		line-height: 29px;
 		color: $link-color;
@@ -36,5 +40,33 @@
 		&:active {
 			background-color: $link-act-color;
 		};
+	}
+}
+
+@media (max-width: $medium){
+	.brends {
+		@include center(621px);
+	}
+}
+
+@media (max-width: $small){
+	.brends {
+		@include center(440px);
+	}
+}
+
+@media (max-width: $extra-small) {
+	.brends {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+
+		&__link {
+			width: 100%;
+			@include pm-zero();
+			margin-bottom: 5px;
+			padding-top: 10px;
+			padding-bottom: 11px;
+		}
 	}
 }
